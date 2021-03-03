@@ -35,12 +35,14 @@ Intially when we downloaded the data from kaggle, the data was not in the right 
 We trained our model with triplet loss as a base metric. So we needed to send three inputs to the model at each iteration. These three inputs are called anchor, positive, negative images (as discussed in Triplet Loss section). To do this we reorgainzed the data manually.
 
 Pictorial view of reorganization:
+
 <img width="437" alt="loading traindata" src="https://user-images.githubusercontent.com/48923446/108098168-1049fb80-70a9-11eb-8050-1000ca1a25f9.PNG">
 
 # Preprocessing
 The initial images were around (850,250,3) pixels. Using the same sized images for training the model would increase the computational complexity of the model. So we converted the images to binary images and then performed mathematical morphological operations. We resized the images to (250,75,1)
 
 Code:
+
 <img width="563" alt="image preprocessing" src="https://user-images.githubusercontent.com/48923446/108098581-8d757080-70a9-11eb-8635-dab1c7b260e5.PNG">
 
 <img width="307" alt="before after" src="https://user-images.githubusercontent.com/48923446/108098827-db8a7400-70a9-11eb-93c3-b012b2936e81.PNG">
