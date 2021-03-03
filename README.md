@@ -34,8 +34,6 @@ Siamese Network supports three types of loss functions, mainly:
 Intially when we downloaded the data from kaggle, the data was not in the right order to train a siamese network. 
 We trained our model with triplet loss as a base metric. So we needed to send three inputs to the model at each iteration. These three inputs are called anchor, positive, negative images (as discussed in Triplet Loss section). To do this we reorgainzed the data manually.
 
-Pictorial view of reorganization:
-
 <img width="437" alt="loading traindata" src="https://user-images.githubusercontent.com/48923446/108098168-1049fb80-70a9-11eb-8050-1000ca1a25f9.PNG">
 
 # Preprocessing
